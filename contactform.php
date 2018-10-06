@@ -6,7 +6,7 @@ if(isset($_POST['submit'])){
 	$artistname = $_POST['artistname'];
 	$message = $_POST['message'];
 
-	$mailto = "blosquimusica@gmail.com";
+	$mailto = "paorella@ing.uchile.cl";
 	$headers = "From: ".$mail;
 	$txt = "You have recieved an e-mail from ".$name.".\n\n".$message;
 
