@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>portafolio sass</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
+	  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
+ 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	
+	<!--<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/style.css">
+		-->
+	<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+	
+<header>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper"> <a href="#!" class="brand-logo"><img src="img/LogoBlosqui 13.png" alt="logo" id="logoMarce"></a>
+                <ul class="right">
+                    <li><a href="#aboutmeID">About Me</a></li>
+                    <li><a href="#skillsID">Services</a></li>
+                    <li><a href="#portfolioID">Portfolio</a></li>
+                    <li><a href="#contactID">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<style>
+.button {
+  display: inline-block;
+  border-radius: 6px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  width: 350px;
+  transition: all 0.5s;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+
+<div class="portada">
+	<a href="#!" class="brand-logocenter"><img src="img/LogoBlosqui12.png" style="display: block;
+   							 margin-left: auto;
+   							 margin-right: auto;
+    							 width: 25%;" alt="logo" id="logoblosqui"</a>
+	<h1>PABLO ORELLANA</h1>  
+	<a href="#contactID"><button class="button"><span>CONTACT ME</span></button></a>
+	<h1>
+	  <a href="" class="typewrite" data-period="2000" data-type='[ "Musician", "Engineer", "Producer" ]'>
+	    <span class="wrap"></span>
+	  </a>
+	</h1>
+	
+</div>
+<div class="contenedor z-depth-5">
+	<div class="container">
+		<div class="row">
+	    <div class="col s12">
+	    	<div class="flecha animated bounceIn infinite">
+	    		<div class="arrow"><i class="material-icons left">arrow_downward</i></div>
+	    	</div>
+	    </div>
+		</div>
+	</div>
+	<div class="aboutme" id="aboutmeID">
+		<div class="row">
+			<div class="col s12 m12 l12">
+				<h1>About Me</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 m5 l5">
+				<img src="img/yo.jpg" alt="" class="marcela-img  animated">
+			</div>
+			<div class="col s12 m7 l7">
+				<p class="aboutme-p animated">Musician and bassist, I've been a part of many underground chilean bands in my carreer since 2006.</p>
+				<p class="aboutme-p animated">I can play many genres like rock, pop and folk. I also have advanced knowledge in music recording, mixing, mastering and production, as an 
+						advanced user in Ableton Live and Reaper. I  want to be involved in projects that i'm proud of and join an amazing team while advancing my musical career.</p>
+				<p class="aboutme-p animated">I think of myself as an easygoing person, always willing to help in any way possible in order to get the job done.</p>
+			</div>
+			
+		</div>
+	</div>
+	<div class="skills" id="skillsID">
+		<div class="row titulo">
+			<div class="col s12 m12 l12">
+				<h1>SERVICES</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 m12 l4">
+				<div>
+					<img src="img/logobajo.png" style="width: 40%;">
+					<h3>Bass player with over 12 years of experience</h3>
+				</div>
+			</div>
+			<div class="col s12 m12 l4">
+				<div>
+					<img src="img/logomic.png" style="width: 40%;">
+					<h3>Recording services for artists</h3>
+				</div>
+			</div>
+			<div class="col s12 m12 l4">
+				<div>
+					<img src="img/logofader.png" style="width: 40%;">
+					<h3>Mixing tracks for audio proyects</h3>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col s12 m12 l4">
+				<div>
+					<img src="img/logospeaker.png" style="width: 40%;">
+					<h3>Mastering services for radio-ready songs</h3>
+				</div>
+			</div>
+			<div class="col s12 m12 l4">
+				<div>
+					<img src="img/logoplug.png" style="width: 40%;">
+					<h3>Producing/Remixing services for artists</h3>
+				</div>
+			</div>
+			<div class="col s12 m12 l4">
+				<div>
+					<img src="img/logobed.png" style="width: 40%;">
+					<h3>Lodging for out-of-town artist using the studio</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="portafolio" id="portfolioID">
+		<div class="row">
+			<h1>Portfolio</h1>
+		</div>
+		<div class="row">
+			<div class="col s12 m12 l4">
+				<div>
+					<h3 style="color:white;">Producer</h3>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLri83yyrhObDiJ90OygbpoM9TTwQB19ny" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>	
+			</div>
+			<div class="col s12 m12 l4">
+				<div>
+					<h3 style="color:white;">Recording</h3>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLri83yyrhObAD3iGvKrDLZ_z5bwdID_fL" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>	
+			</div>
+			<div class="col s12 m12 l4">
+				<div>
+					<h3 style="color:white;">Mixing</h3>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLri83yyrhObCyJsYpm86jv8zjU8z-GXXG" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>	
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 m12 l4">
+				<div>
+					<h3 style="color:white;">Mastering</h3>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLri83yyrhObCLo6gE99fiL6RGhmkJvVmK" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>	
+			</div>
+			<div class="col s12 m12 l4">
+				<div>
+					<h3 style="color:white;">Bassist</h3>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLri83yyrhObDrGu3HNfOzi9lYcIJ-eRy7" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>	
+			</div>
+			<div class="col s12 m12 l4">
+				<div>
+					<h3 style="color:white;">Remixes</h3>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLri83yyrhObDi1up7zosWe55zM8S68y9b" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>	
+			</div>
+		</div>
+	</div>
+<style>
+.button2 {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+</style>
+	<div class="contact" id="contactID">
+		<div>
+			<h1> Contact </h1>
+		</div>
+		<div>
+	 		<form id="contact-form" method="post" action="contactform.php" style="width:50%;margin-left:25%;">
+				<input name = "name" type = "text" placeholder = "Your Name" required><br>
+				<input name = "mail" type = "text" placeholder = "Your Email" required><br>
+				<input name = "artistname" type = "text" placeholder = "Artist Name" required><br>
+				<textarea name = "message" placeholder = "Message" required"></textarea>
+				<button type="submit" name = "submit" class="button2">Send Email</button>
+		</div>
+	</div>
+	<div></div>
+	<footer>
+		<div class="row">
+			<div class="col s12 m12 l12 fin">	
+				<p>Made With <i class="fa fa-heart" aria-hidden="true"></i></p>
+			</div>
+		</div>
+	</footer>
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="sass/materialize-src/js/bin/materialize.min.js"> </script>
+    <script src="waypoints/lib/jquery.waypoints.js"></script>
+    <script src="waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
