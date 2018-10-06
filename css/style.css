@@ -1,0 +1,308 @@
+*{
+	font-family: $body_font;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+img{
+	width: 100%;
+	height: auto;
+}
+a{
+	text-decoration: none;
+}
+p{
+	font-size: 20px;
+}
+
+nav{
+	z-index: 222;
+	background-color: transparent;
+	box-shadow: none;
+	img{
+		width: 50px;
+		height: 50px;
+	}
+	ul li a{
+		font-size: 20px;
+		font-weight: 700;
+	}
+}
+.navbar-fixed{
+	position: absolute;
+}
+
+.portada{
+	z-index: -111;
+	background-image: url(../img/bici3.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: baseline ;
+	flex-direction: column;
+	h1, h3{
+		text-align: center;
+		display: block;
+		margin: 5px;
+		padding: 0;
+		align-self: center;
+		color: white;
+	}
+}
+.typewrite{
+	color: white;
+}
+.contenedor{
+	h1{
+		font-weight: 700;
+		color: white;
+		text-align: center;
+	}
+	margin: -50px 30px 15px 30px;
+	z-index: 1111111;
+	background-color: white;
+	border-radius: $radio;
+	.flecha{
+		width: 100%;
+		margin: 20px auto;
+		div{
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			margin: auto;
+			i{
+				color: $rosado;
+				font-size: 70px;
+			}
+		}
+	}
+	.aboutme{
+		background-color: $rosado;
+		padding: 30px 150px 90px;
+		-webkit-clip-path: polygon(0 0, 100% 8%, 100% 92%, 0% 100%);
+		clip-path: polygon(0 0, 100% 8%, 100% 92%, 0% 100%);
+		color: white;
+		.marcela-img{
+			border: 8px solid white;
+			-ms-transform: rotate(-7deg); /* IE 9 */
+    		-webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+    		transform: rotate(-7deg);
+    		box-shadow: 5px 5px 2px #888888;
+    		margin: 10px;
+    		@media screen and (max-width: 600px){
+    			width: 70%;
+    		}
+		}
+		
+		i{
+			font-size: 60px;
+		}
+		i.module{
+			color: $rosado;
+		}
+		i.list{
+			color: #00BCD4;
+		}
+		i.headlike{
+			color: #4CAF50;
+		}
+		p{
+			color: white;
+			text-align: left;
+			margin-left: 10px;
+		}
+		h6{
+			font-family: $body_serif;
+			font-weight: bold;
+		}
+		@media screen and (max-width: 600px){
+		padding: 20px;
+		-webkit-clip-path: polygon(0 0, 100% 4%, 100% 96%, 0% 100%);
+		clip-path: polygon(0 0, 100% 4%, 100% 96%, 0% 100%);
+		}
+	}
+	
+	.skills{
+		z-index: -22;
+		background-color: #F0F0F0;
+		margin-top: -80px;
+		padding: 60px 30px;
+		text-align: center;
+		h1{
+			color: $azul;
+		}
+		.skills-small-row{
+			margin-bottom: 50px;
+			@media screen and (max-width: 1000px){
+				margin: 0;
+			}
+		}
+		.skills-big{
+			border: 10px solid $celeste;
+			border-radius: 50%;
+			width: 240px;
+			height: 240px;
+			margin: auto;
+			margin-bottom: 20px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			@media screen and (max-width: 1000px){
+				width: 170px;
+				height: 170px;
+			}
+			i{
+				font-size: 130px;
+				@media screen and (max-width: 1000px){
+					font-size: 80px;
+				}	
+			}
+		}
+		.javascript{
+			border-color: $azul;
+			i{
+				color: $azul;
+			}
+		}
+		.html5{
+			border-color: $celeste;
+			i{
+				color: $celeste;
+			}
+		}
+		.css3{
+			border-color: $rosado;
+			i{
+				color: $rosado;
+			}
+		} 
+		.skills-small{
+			border: 6px solid #ACC1C2;
+			border-radius: 50%;
+			width: 150px;
+			height: 150px;
+			margin: auto;
+			margin-bottom: 20px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			@media screen and (max-width: 400px){
+				width: 100px;
+				height: 100px; 
+			}
+			i{
+				font-size: 60px;
+				color: #ACC1C2;
+				@media screen and (max-width: 400px){
+					font-size: 40px; 
+				}
+			}
+		}
+
+	}
+	
+	.portafolio{
+		-webkit-clip-path: polygon(35% 0, 100% 5%, 100% 93%, 65% 100%, 0 95%, 0 7%);
+		clip-path: polygon(35% 0, 100% 5%, 100% 93%, 65% 100%, 0 95%, 0 7%);
+		z-index: 333;
+		margin-top: -70px;
+		padding-top: 30px;
+		padding-bottom: 80px;
+		background-color: $azul;
+		text-align: center;
+		.titulo-port{
+			color: $azul;
+		}
+		.pokedex{
+			background-image: url(../img/pokedex.png);
+		}
+		.trans-lab{
+			background-image: url(../img/trans-lab.png);
+		}
+		.todo{
+			background-image: url(../img/todo.png);
+		}
+		.lab-car{
+			background-image: url(../img/lab-car.png);
+		}
+		.lyft-flexbox{
+			background-image: url(../img/lyft-flexbox.png);
+		}
+		.pinterest{ 
+			background-image: url(../img/pinterest.png);
+		}
+		.portf{
+			width: 100%;
+			height: 35vh;
+			border-radius: 10px;
+			background-size: cover;
+			background-position: center;
+			margin-bottom: 20px;
+		}
+
+		.hove{
+			border-radius: 10px;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			opacity: 0;
+			-webkit-transition: background-color 1s ease-out;
+  			-moz-transition: background-color 1s ease-out;
+  			-o-transition: background-color 1s ease-out;
+  			transition: background-color 1s ease-out;
+		}
+		.hove:hover{
+			opacity: 1;
+			background-color: rgba(225, 225, 225, 0.7);
+		}
+		.btn{
+			background-color: $rosado;
+		}
+		@media screen and (max-width: 600px){
+			margin-top: -90px;
+			-webkit-clip-path: polygon(50% 0%, 100% 3%, 100% 97%, 50% 100%, 0 97%, 0 3%);
+			clip-path: polygon(50% 0%, 100% 3%, 100% 97%, 50% 100%, 0 97%, 0 3%);
+		}
+	}
+	.contact{
+		background-color: $celeste;
+		padding-top: 60px;
+		margin-top: -60px;
+		height: 50vh;
+		p{
+			font-size: 20px;
+			color: white;
+			i{
+				font-size: 25px;
+			}
+		}
+		a:hover p{
+			color: $rosado;
+
+		}
+		@media screen and (max-width: 600px){
+			height: 85vh;
+			padding: 20px;
+		}
+	} 
+	
+	footer{
+		background-color: #323437;
+		color: white;
+		margin-top: -20px;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 600px){
+	.aboutme{
+		padding: 0;
+		-webkit-clip-path: polygon(0 0, 0 0, 0 0, 0 0 );
+		clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+	}
+}
